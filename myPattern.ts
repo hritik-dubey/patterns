@@ -68,13 +68,34 @@
 // *
 
 
-function printPattern(n: number): void {
-    for (let i: number = 1; i <= n; i++) {
+// function printPattern(n: number): void {
+//     for (let i: number = 1; i <= n; i++) {
+//         let str = ""
+//         for (let j: number = 1; j <= n-i+1; j++) {
+//             str += "*";
+//         }
+//         console.log(str)
+//     }
+// }
+// printPattern(3)
+
+
+// ===============================================================================================================
+// Input: ‘N’ = 3
+
+// Output:
+
+// 1 2 3
+// 1 2
+// 1
+
+function printNumber(n:number){
+    for(let i:number=1;i<=n;i++){
         let str = ""
-        for (let j: number = 1; j <= n-i+1; j++) {
-            str += "*";
+        for(let j:number=1;j<=n-i+1;j++){
+            str+=j
         }
         console.log(str)
     }
 }
-printPattern(3)
+printNumber(5)
