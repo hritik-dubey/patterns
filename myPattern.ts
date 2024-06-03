@@ -47,11 +47,32 @@
 // 3 3 3
 
 
-function printPattern(n:number):void{
-    for(let i :number=1;i<=n;i++){
-        let str =  ""
-        for(let j:number=1;j<=i;j++){
-            str+=i;
+// function printPattern(n:number):void{
+//     for(let i :number=1;i<=n;i++){
+//         let str =  ""
+//         for(let j:number=1;j<=i;j++){
+//             str+=i;
+//         }
+//         console.log(str)
+//     }
+// }
+// printPattern(3)
+
+
+// =======================================================================================================
+// Input: ‘N’ = 3
+
+// Output: 
+// * * *
+// * *
+// *
+
+
+function printPattern(n: number): void {
+    for (let i: number = 1; i <= n; i++) {
+        let str = ""
+        for (let j: number = 1; j <= n-i+1; j++) {
+            str += "*";
         }
         console.log(str)
     }
